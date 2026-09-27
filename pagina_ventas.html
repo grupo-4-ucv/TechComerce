@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechComerce</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: "Nunito Sans", sans-serif;
+            background-color: rgb(30,64,175);
+            color: white;
+        }
+
+        header{
+            background-color: rgb(15,23,42);
+            padding: 20px;
+        }
+
+        header h1{
+            text-align: center;
+            margin: 0 0 15px 0;
+        }
+
+        nav{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        
+        nav a{
+            color: white;
+            text-decoration: none;
+        }
+
+        main{
+            padding: 30px;
+        }
+
+        .inicio{
+            text-align: center;
+            background-color: gray;
+            backdrop-filter: blur(12px);
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+
+        .btn-productos{
+            display: inline-block;
+            padding: 12px 25px;
+            margin-top: 20px;
+            background-color: rgb(15,23,42);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        #productos{
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .contenedor-productos{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card{
+            width: 250px;
+            height: 380px;
+            padding: 20px;
+            background-color: white;
+            border: 2px solid rgb(15,23,42);
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .card img{
+            width: 100%;
+            height: 150px;
+            object-fit: cover; /* propiedad que controla como se adapta la imagen | cover adapta sin deformar*/
+            border-radius: 5px;
+        }
+        
+        .card h3{
+            color: rgb(15,23,42);
+        }
+
+        .card p{
+            margin-top: 5px;
+            color: rgb(48, 80, 155);
+        }
+
+        .precio{
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .card button{
+            padding: 10px 20px;
+            margin-top: 15px;
+            background-color: rgb(15,23,42);
+            border: none;
+            color: white;
+            border-radius: 15px;
+        }
+
+        footer{
+            background-color: rgb(15,23,42);
+            text-align: center;
+            padding: 50px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>TechComerce</h1>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Productos</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+    <!-- Contenido principal -->
+    <main>
+        <section class="inicio">
+            <h2>El mejor distribuidor de tecnología del Perú</h2>
+            <p>
+                Encuentra los mejores productos tecnologicos como computadoras, laptops, periféricos, accesorios y más
+            </p>
+            <a href="#" class="btn-productos">
+                Ver productos
+            </a>
+        </section>
+        <section>
+            <h2 id="productos">Nuestros producto</h2>
+            <div class="contenedor-productos">
+                <div class="card">
+                    <img src="img/computadora.jpg" alt="computadoras">
+                    <h3>Ultimas Computadoras</h3>
+                    <p>Rendimiento extremo, estabilidad y potencia total.</p>
+                    <p class="precio">S/ 2700.00</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="img/laptop.jpg" alt="laptops">
+                    <h3>Laptops de alta generación</h3>
+                    <p>Máxima potencia, diseño prémium y velocidad.</p>
+                    <p class="precio">S/ 2700.00</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="img/perifericos.jpg" alt="perifericos">
+                    <h3>Perifericos de alta gama</h3>
+                    <p>Precisión, respuesta inmediata y confort superior.</p>
+                    <p class="precio">S/ 2700.00</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="contacto">
+        <p>TechComerce &copy; 2026</p>
+        <p>Contacto: ventas@techcomerce.com</p>
+    </footer>
+</body>
+</html>
