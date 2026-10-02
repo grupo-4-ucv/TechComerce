@@ -45,7 +45,7 @@ main {
     margin: 30px auto;
 }
 
-.contenedor-slide{
+.contenedor-slide{  
     display: flex;
     width: 400%;
     height: 100%;
@@ -167,6 +167,36 @@ main {
     border: none;
     color: white;
     border-radius: 15px;
+}
+
+.seccion-video{
+    max-width: 1000px;
+    margin: 60px auto 20px;
+    padding: 40px;
+    text-align: center;
+    /*background-color: white; opcional*/
+}
+
+.seccion-video h2{
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.seccion-video p{
+    margin-bottom: 25px;
+}
+
+.contenedor-video{
+    width: 100%;
+    max-width: 850px;
+    margin: auto;
+    overflow:hidden;
+    border-radius: 15px;
+}
+
+.contenedor-video video{
+    width: 100%;
+    display: block;
 }
 
 footer {
