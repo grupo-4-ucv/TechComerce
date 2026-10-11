@@ -14,14 +14,38 @@ body {
 
 header {
     background-color: rgb(15, 23, 42);
-    padding: 20px;
+    padding: 15px 40px;
 }
 
-header h1 {
+/*header h1 {
     text-align: center;
     margin: 0 0 15px 0;
+}*/
+.contenedor-navbar{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.contenedor-logo img{
+    width: 240px;
+    height: auto;
+    display: block;
+}
+/*
+.contenedor-logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contenedor-logo span{
+    font-size: 24px;
+    font-weight: bold;
+}
+*/
 nav {
     display: flex;
     justify-content: center;
